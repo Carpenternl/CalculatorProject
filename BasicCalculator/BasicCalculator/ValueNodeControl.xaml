@@ -5,20 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BasicCalculator"
              mc:Ignorable="d" 
-             d:DesignHeight="30" d:DesignWidth="100">
+             Height="Auto" Padding="0,5" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Loaded="UserControl_Loaded">
     <UserControl.Resources>
         <Style TargetType="Label" x:Key="valueLabelpart">
-            <Setter Property="Padding" Value="0,5"/>
+            <Setter Property="Padding" Value="0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
         </Style>
     </UserControl.Resources>
-    <Grid Margin="4,0,4,0" >
+    <Grid Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width ="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="0" Padding="1,5,0,0" Content="-"  x:Name="Negative" Visibility="Collapsed" />
-        <Label Grid.Column="1" Padding="1,5,1,0" Content="€" x:Name="Valut" Visibility="Collapsed" />
-        <Label Grid.Column="2" Padding="0,5,1,0"  x:Name="digits"/>
+        <Label Style="{DynamicResource valueLabelpart}"  Grid.Column="0" Content="-"  x:Name="Negative"/>
+        <Label Style="{DynamicResource valueLabelpart}"  Grid.Column="1" Content="€" x:Name="valut"/>
+        <Label Style="{DynamicResource valueLabelpart}"  Grid.Column="2" x:Name="digits"/>
     </Grid>
 </UserControl>

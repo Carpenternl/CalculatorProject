@@ -38,11 +38,11 @@ namespace BasicCalculator
             bool NewVal = (bool)e.NewValue;
             if (NewVal)
             {
-                Target.Valut.Visibility = Visibility.Visible;
+                Target.valut.Visibility = Visibility.Visible;
             }
             else
             {
-                Target.Valut.Visibility = Visibility.Collapsed;
+                Target.valut.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -77,6 +77,11 @@ namespace BasicCalculator
         public ValueNodeControl()
         {
             InitializeComponent();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            Negative.Visibility = valut.Visibility = Visibility.Collapsed;
         }
     }
 }

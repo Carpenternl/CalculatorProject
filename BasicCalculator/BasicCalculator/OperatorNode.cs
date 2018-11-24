@@ -4,6 +4,7 @@
     {
         public abstract ValueNode GetValue();
     }
+    // Select 
     internal class OperatorNode : EquationNode
     {
         internal operation Operation;

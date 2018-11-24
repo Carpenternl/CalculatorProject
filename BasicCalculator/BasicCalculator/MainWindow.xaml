@@ -16,9 +16,7 @@
         <StackPanel Grid.Row="0">
             
         </StackPanel>
-        <StackPanel Grid.Row="1" >
-            <Label x:Name="BufferDisplay"/>
-        </StackPanel>
+        <local:EquationControl x:Name="CurrentEquation" Grid.Row="1"/>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>

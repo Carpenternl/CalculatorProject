@@ -14,11 +14,11 @@
             
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Orientation="Horizontal" x:Name="Left">
-            <local:ValueNodeControl internalval="-7.90" isValuta="True"/>
-            <Label Content="X"/>
+            <local:ValueNodeControl internalval="-7.5" isValuta="True"/>
+            <local:OperatorControl />
 
         </StackPanel>
-        <local:ValueNodeControl Grid.Column="1" x:Name="Buffer" internalval="-53" isValuta="True"/>
+        <local:ValueNodeControl Grid.Column="1" x:Name="Buffer" internalval="563" isValuta="True"/>
         <Label Grid.Column="2" Content="=" Padding="2,5,2,0"/>
         <Label Grid.Column="3"/>
     </Grid>
